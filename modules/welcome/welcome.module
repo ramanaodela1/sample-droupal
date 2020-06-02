@@ -1,0 +1,7 @@
+<?php
+
+function welcome_user_login($account) {
+    $config = \Drupal::config('welcome.adminsettings');
+    drupal_set_message($config->get('welcome_message'));
+  }
+?>
